@@ -29,7 +29,7 @@ jobs:
       - name: Copy website files
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: www
+          local: CS260/www
           remote: /var/www/html
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
