@@ -1,0 +1,41 @@
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: black;
+    padding: 1em;
+    width: max-content;
+}
+
+.boxy {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: burlywood;
+    border-style: ridge;
+    border-color: cornflowerblue;
+    border-width: medium;
+}
+
+#IDea {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: darkcyan;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkolivegreen;
+    color: ivory;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.menuItems {
+    display: inline;
+    padding: .5em;
+    text-align: center;
+}
+
+.menuItems:hover {
+    background-color: lawngreen;
+    color: black;
+}
