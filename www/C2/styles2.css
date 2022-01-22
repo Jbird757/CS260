@@ -52,3 +52,15 @@
     margin: 0 auto;
     text-align: center;
 }
+
+@media screen and (orientation: portrait) {
+    .menu {
+        display: block;
+        font-size: medium;
+    }
+
+    .sidebarItems {
+        padding-left: .2em;
+        font-size: auto;
+    }
+}
