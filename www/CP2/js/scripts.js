@@ -32,7 +32,6 @@ function getFact() {
 
 document.getElementById("qSubmit").addEventListener("click", function(event) {
   event.preventDefault();
-  debugger
   const num = document.getElementById('numQuestions').value;
   let contents = "";
   if (num === "") {
