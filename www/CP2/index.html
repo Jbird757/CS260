@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Assignment C4</title>
+        <title>CP - Survey1</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/Scheme.png" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -14,9 +14,9 @@
     </head>
     <body class="blackB">
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar58 navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Brand Name</a>
+                <a class="navbar-brand" href="#">Survey Site</a>
                 <!--<a class=navbar-brand "><img class="header-image" src="assets/Scheme.png"></a>-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,25 +37,32 @@
             </div>
         </nav>
         <!-- Page content-->
+        <div onload="getFact()" id="inspirational-fact">
+            <h3 id="factResult"></h3>
+        </div>
         <div class="container">
             <div class="text-center mt-5 red-title">
-                <h1>My custom webpage look</h1>
-                <p class="lead">For use for the future</p>
+                <h1>Survey Site</h1>
+                <p class="lead">High-quality surveys</p>
             </div>
             <div class="container mt-5 body-container">
-                <div class="body-item-1"></div>
-                <div class="body-item-2"></div>
+                <div class="body-item-1">
+                    <h1 class="content-heading">Set up a survey</h1>
+                    <div>
+                        <p class="content-question">How many questions in your survey?</p>
+                        <input type="text" id="numQuestions">
+                        <input id="qSubmit" type="submit" value="Go!"></input>
+                    </div>
+                </div>
             </div>
-            <div class="container mt-5 body-container">
-                <div class="body-item-2"></div>
-                <div class="body-item-1"></div>
-            </div>
+
+            <div id="questionGen" class="container mt-5 body-container"></div>
         </div>
 
 
         <footer class="bg-dark footer">
-            <div>
-                <div><p class="text-center text-white">Copyright &copy; Jay Lowry 2022</p></div>
+            <div id="footer1">
+                <a href="https://github.com/Jbird757/CS260/tree/main/www/CP2"><img src="./assets/GitHub-Mark-Light-32px.png"></a>
             </div>
         </footer>
 

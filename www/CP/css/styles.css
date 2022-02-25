@@ -222,18 +222,7 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
-a:hover {
-  color: #0a58ca;
-}
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
-}
 
 pre,
 code,
@@ -1125,10 +1114,10 @@ progress {
 }
 
 .navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
