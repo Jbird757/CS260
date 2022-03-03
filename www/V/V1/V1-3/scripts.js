@@ -10,11 +10,11 @@ let app = new Vue({
   methods: {
     toggleLoading() {
       this.isLoading = !this.isLoading;
-      if (this.isLoading === true) {
-        this.className = 'red';
-      } else {
-        this.className = 'blue';
-      }
+      // if (this.isLoading === true) {
+      //   this.className = 'red';
+      // } else {
+      //   this.className = 'blue';
+      // }
     }
   }
 });

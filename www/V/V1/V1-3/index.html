@@ -8,10 +8,10 @@
     <body>
 
         <div id="root">
-            <h1 :class="className">Hello World</h1>
-            <button :title="title">Hover over me</button>
+            <h1 v-bind:class="className">Hello World</h1>
+            <button v-bind:title="title">Hover over me</button>
             <!--The below is supposed to assign blue if isloading is true, but it doesn't work-->
-            <button :class="{ 'blue': isLoading}" @click="toggleLoading">Click Me</button>
+            <button v-bind:class="{ 'blue': isLoading}" @click="toggleLoading">Click Me</button>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
