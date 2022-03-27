@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <div id="root">
+            <p> {{ message }}</p>
+            <p>I said, {{ screaming }}</p>
+            <br>
+            <h1>Incomplete Tasks</h1>
+            <ul>
+                <li v-for="task in incompleteTasks" v-text="task.description"></li>
+            </ul>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

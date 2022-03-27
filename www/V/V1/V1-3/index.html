@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <div id="root">
+            <h1 v-bind:class="className">Hello World</h1>
+            <button v-bind:title="title">Hover over me</button>
+            <!--The below is supposed to assign blue if isloading is true, but it doesn't work-->
+            <button v-bind:class="{ 'blue': isLoading}" @click="toggleLoading">Click Me</button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
