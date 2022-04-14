@@ -18,6 +18,7 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/Jbird757/CS260/tree/main/www/cp3">Github</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,6 +35,7 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
 /*!
+
  * Bootstrap v5.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
