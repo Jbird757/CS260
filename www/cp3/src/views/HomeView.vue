@@ -14,7 +14,7 @@
                     <div>
                         <p class="content-question">How many questions in your survey?</p>
                         <input type="text" id="numQuestions">
-                        <input id="qSubmit" type="submit" value="Go!"></input>
+                        <input id="qSubmit" type="submit" value="Go!">
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
 //import HelloWorld from '@/components/HelloWorld.vue'
 
 function getFact() {
-  url = "https://uselessfacts.jsph.pl/random.json?language=en";
+  let url = "https://uselessfacts.jsph.pl/random.json?language=en";
   fetch(url)
       .then(function(response) {
       return response.json();
@@ -40,26 +40,26 @@ function getFact() {
       });
 }
 
-document.getElementById("qSubmit").addEventListener("click", function(event) {
-  event.preventDefault();
-  const num = document.getElementById('numQuestions').value;
-  let contents = "";
-  if (num === "") {
-    return;
-  }
-  for (let i = 0; i < num; i++) {
-    contents += "<div class='body-item-1'>";
-    contents += "<p class='content-question'>New Question (uneditable as of yet)</p>";
-    contents += "<ul class='questionnaire'>";
-    contents += "<li class='content-body'><a>These questions are an example only</li>";
-    contents += "<li class='content-body'><a>I called an API for a random fact at the top of this page</a></li>";
-    contents += "<li class='content-body'><a>Github link is at the bottom</a></li>";
-    contents += "<li class='content-body'><a>Enjoy</a></li>";
-    contents += "</ul>";
-    contents += "</div>";
-  }
-  document.getElementById('questionGen').innerHTML = contents;
-});
+// document.getElementById("qSubmit").addEventListener("click", function(event) {
+//   event.preventDefault();
+//   const num = document.getElementById('numQuestions').value;
+//   let contents = "";
+//   if (num === "") {
+//     return;
+//   }
+//   for (let i = 0; i < num; i++) {
+//     contents += "<div class='body-item-1'>";
+//     contents += "<p class='content-question'>New Question (uneditable as of yet)</p>";
+//     contents += "<ul class='questionnaire'>";
+//     contents += "<li class='content-body'><a>These questions are an example only</li>";
+//     contents += "<li class='content-body'><a>I called an API for a random fact at the top of this page</a></li>";
+//     contents += "<li class='content-body'><a>Github link is at the bottom</a></li>";
+//     contents += "<li class='content-body'><a>Enjoy</a></li>";
+//     contents += "</ul>";
+//     contents += "</div>";
+//   }
+//   document.getElementById('questionGen').innerHTML = contents;
+// });
 
 window.onload = getFact;
 
